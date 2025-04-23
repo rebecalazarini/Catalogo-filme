@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding:0;
+    overflow-x: hidden;
+    background-color: #e1a0f1;
+}
+
+.header {
+    background: url('header.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+
+}
+
+.perso{
+    background-color: #be57e7;
+    padding: 20px;
+    border-radius: 15px;
+}
+.banner{
+    background-color: #722591;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 1.0s ease, transform 1.0s ease;
+    animation: fadeInDown 1.0s forwards;
+}
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.sinopse {
+    padding: 20px;
+     
+}
+h2{
+    color: #df50cc;
+    margin-top: 40px;
+
+}
+.elenco-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.av{
+    border: 2px solid #000000;
+    padding: 10px;
+    width:30%;
+    margin-top: 20px;
+}
+
+.elenco-item {
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+    
+}
+.elenco-item img {
+    width: 100%;
+    border-radius: 5px;
+}
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #343a40;
+    color:white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+button{
+    width: 60px;
+    height: 40px;
+    background: #722591;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+}
+button:hover{
+    background: #ffffff;
+    color: #722591;
+}
